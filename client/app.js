@@ -1,7 +1,7 @@
 /*
   API CONFIG
 */
-const API_BASE = "http://localhost:5001/api/v1/magic-items";
+const API_BASE = "https://hogwarts-magic-management.onrender.com/api/v1/magic-items";
 
 /*
   STATE
