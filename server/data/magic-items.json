@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Passus Courseus",
+    "type": "Spell",
+    "element": "Lightning",
+    "power": 99,
+    "rarity": "Wow",
+    "description": "A legendary incantation that miraculously turns partial assignments into a passing grade.",
+    "status": "Unlearned"
+  },
+  {
+    "name": "Absencia Maxima",
+    "type": "Spell",
+    "element": "Earth",
+    "power": 66,
+    "rarity": "Epic",
+    "description": "Temporarily hides your attendance record. Side effects may include sudden 'lab make-up' quests.",
+    "status": "Unlearned"
+  },
+  {
+    "name": "CtrlAltDelete Draft",
+    "type": "Potion",
+    "element": "Fire",
+    "power": 72,
+    "rarity": "Rare",
+    "description": "One sip and you confidently delete broken code... and sometimes the correct folder too.",
+    "status": "Unbrewed"
+  },
+  {
+    "name": "Expelliarmus",
+    "type": "Spell",
+    "element": "Lightning",
+    "power": 80,
+    "rarity": "Epic",
+    "description": "Disarms the opponent, forcing them to drop what they are holding.",
+    "status": "Unlearned"
+  },
+  {
+    "name": "Stupefy",
+    "type": "Spell",
+    "element": "Fire",
+    "power": 75,
+    "rarity": "Rare",
+    "description": "Stuns the target and temporarily incapacitates them.",
+    "status": "Learned"
+  },
+  {
+    "name": "Lumos",
+    "type": "Spell",
+    "element": "Earth",
+    "power": 20,
+    "rarity": "Common",
+    "description": "Creates a small light at the tip of the wand.",
+    "status": "Learned"
+  },
+  {
+    "name": "Nox",
+    "type": "Spell",
+    "element": "Earth",
+    "power": 10,
+    "rarity": "Common",
+    "description": "Extinguishes light created by Lumos.",
+    "status": "Unlearned"
+  },
+  {
+    "name": "Protego",
+    "type": "Spell",
+    "element": "Ice",
+    "power": 65,
+    "rarity": "Rare",
+    "description": "Conjures a protective shield to deflect minor spells and projectiles.",
+    "status": "Unlearned"
+  },
+  {
+    "name": "Alohomora",
+    "type": "Spell",
+    "element": "Earth",
+    "power": 45,
+    "rarity": "Common",
+    "description": "Unlocks doors and objects sealed by simple locks.",
+    "status": "Learned"
+  },
+  {
+    "name": "Wingardium Leviosa",
+    "type": "Spell",
+    "element": "Lightning",
+    "power": 55,
+    "rarity": "Rare",
+    "description": "Levitates an object and allows controlled movement in the air.",
+    "status": "Learned"
+  },
+  {
+    "name": "Petrificus Totalus",
+    "type": "Spell",
+    "element": "Ice",
+    "power": 70,
+    "rarity": "Epic",
+    "description": "Temporarily immobilizes the target by locking their body.",
+    "status": "Unlearned"
+  },
+  {
+    "name": "Expecto Patronum",
+    "type": "Spell",
+    "element": "Ice",
+    "power": 95,
+    "rarity": "Legendary",
+    "description": "Summons a Patronus to repel Dementors and protect the caster.",
+    "status": "Unlearned"
+  },
+  {
+    "name": "Finite Incantatem",
+    "type": "Spell",
+    "element": "Earth",
+    "power": 60,
+    "rarity": "Rare",
+    "description": "Terminates the effects of active spells in the immediate area.",
+    "status": "Learned"
+  },
+  {
+    "name": "Felix Felicis",
+    "type": "Potion",
+    "element": "Fire",
+    "power": 90,
+    "rarity": "Legendary",
+    "description": "Grants the drinker a period of extraordinary luck.",
+    "status": "Unbrewed"
+  },
+  {
+    "name": "Polyjuice Potion",
+    "type": "Potion",
+    "element": "Earth",
+    "power": 85,
+    "rarity": "Epic",
+    "description": "Allows the drinker to assume the appearance of another person.",
+    "status": "Brewed"
+  },
+  {
+    "name": "Wiggenweld Potion",
+    "type": "Potion",
+    "element": "Earth",
+    "power": 40,
+    "rarity": "Common",
+    "description": "Restores vitality and heals minor injuries.",
+    "status": "Brewed"
+  },
+  {
+    "name": "Pepperup Potion",
+    "type": "Potion",
+    "element": "Fire",
+    "power": 35,
+    "rarity": "Common",
+    "description": "Relieves common cold symptoms and warms the body.",
+    "status": "Unbrewed"
+  },
+  {
+    "name": "Draught of Peace",
+    "type": "Potion",
+    "element": "Ice",
+    "power": 55,
+    "rarity": "Rare",
+    "description": "Calms anxiety and reduces agitation, promoting peaceful sleep.",
+    "status": "Brewed"
+  },
+  {
+    "name": "Veritaserum",
+    "type": "Potion",
+    "element": "Lightning",
+    "power": 92,
+    "rarity": "Legendary",
+    "description": "A powerful truth serum that compels the drinker to speak honestly.",
+    "status": "Unbrewed"
+  },
+  {
+    "name": "Amortentia",
+    "type": "Potion",
+    "element": "Fire",
+    "power": 78,
+    "rarity": "Epic",
+    "description": "A potent love potion that causes strong infatuation in the drinker.",
+    "status": "Unbrewed"
+  },
+  {
+    "name": "Invigoration Draught",
+    "type": "Potion",
+    "element": "Lightning",
+    "power": 60,
+    "rarity": "Rare",
+    "description": "Boosts energy and focus for a short duration.",
+    "status": "Brewed"
+  }
+]

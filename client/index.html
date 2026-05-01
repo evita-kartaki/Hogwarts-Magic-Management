@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hogwarts Spell & Potion Manager</title>
+  <link rel="icon" type="image/png" href="image/harry-potter.png">
+
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    body{
+      background: radial-gradient(900px 600px at 20% 10%, rgba(111,66,193,.20), transparent 60%),
+                  radial-gradient(800px 520px at 80% 20%, rgba(13,110,253,.18), transparent 60%),
+                  #0b1020;
+      color: rgba(255,255,255,.92);
+      min-height: 100vh;
+    }
+    .glass {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(8px);
+    }
+    .muted { color: rgba(255,255,255,.65); }
+    .badge-soft-success {
+      background: rgba(25,135,84,.18);
+      border: 1px solid rgba(25,135,84,.35);
+    }
+    .badge-soft-secondary {
+      background: rgba(108,117,125,.16);
+      border: 1px solid rgba(108,117,125,.30);
+    }
+    .item-card { border: 1px solid rgba(255,255,255,.12); }
+    .item-active { box-shadow: 0 0 0 1px rgba(25,135,84,.25), 0 10px 30px rgba(0,0,0,.35); }
+    .item-inactive { box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+    .progress { background: rgba(255,255,255,.10); }
+  </style>
+</head>
+
+<body>
+  <div class="container py-4">
+
+    <!-- Header -->
+    <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-4">
+      <div>
+        <h1 class="h3 mb-1">Hogwarts – Διαχειριστής Ξορκιών & Φίλτρων</h1>
+      </div>
+    </div>
+
+    <div class="row g-3">
+
+      <!-- Form column -->
+      <div class="col-12 col-lg-4">
+        <div class="card glass text-white">
+          <div class="card-body">
+            <h2 class="h5 mb-1">Προσθήκη Ξορκιού / Φίλτρου</h2>
+
+            <!-- Warning box -->
+            <div id="warnBox" class="alert alert-danger d-none py-2 mb-3" role="alert"></div>
+
+            <div class="mb-3">
+              <label class="form-label">Όνομα</label>
+              <input
+                id="name"
+                class="form-control bg-dark text-white border-light-subtle"
+                placeholder="π.χ. Expelliarmus"
+              >
+            </div>
+
+            <div class="row g-2">
+              <div class="col-6">
+                <label class="form-label">Τύπος</label>
+                <select id="type" class="form-select bg-dark text-white border-light-subtle">
+                  <option>Ξόρκι</option>
+                  <option>Φίλτρο</option>
+                </select>
+              </div>
+
+              <div class="col-6">
+                <label class="form-label">Στοιχείο</label>
+                <select id="element" class="form-select bg-dark text-white border-light-subtle">
+                  <option>Φωτιά</option>
+                  <option>Πάγος</option>
+                  <option>Αστραπή</option>
+                  <option>Γη</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row g-2 mt-1">
+              <div class="col-6">
+                <label class="form-label">Δύναμη (1–100)</label>
+                <input
+                  id="power"
+                  type="number"
+                  min="1"
+                  max="100"
+                  value="40"
+                  class="form-control bg-dark text-white border-light-subtle"
+                >
+              </div>
+
+              <div class="col-6">
+                <label class="form-label">Σπανιότητα</label>
+                <select id="rarity" class="form-select bg-dark text-white border-light-subtle">
+                  <option>Κοινό</option>
+                  <option>Σπάνιο</option>
+                  <option>Επικό</option>
+                  <option>Θρυλικό</option>
+                  <option>Ουαου</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt-3">
+              <label class="form-label">Περιγραφή</label>
+              <textarea
+                id="desc"
+                rows="3"
+                class="form-control bg-dark text-white border-light-subtle"
+                placeholder="Μια σύντομη περιγραφή..."
+              ></textarea>
+            </div>
+
+            <button id="addBtn" class="btn btn-primary w-100 mt-3">
+              Προσθήκη
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- List column -->
+      <div class="col-12 col-lg-8">
+        <div class="card glass text-white">
+          <div class="card-body">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 mb-3">
+              <div>
+                <h2 class="h5 mb-1">Λίστα Μαγικών Αντικειμένων</h2>
+              </div>
+
+              <!-- Stats -->
+              <div id="stats" class="d-flex gap-2 flex-wrap"></div>
+            </div>
+
+            <!-- Container for items -->
+            <div id="labContainer"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer tip -->
+    <div class="muted small mt-4">
+      Tip: Άνοιξε DevTools για να βλέπεις errors/console logs όπως κάναμε στο μάθημα!
+    </div>
+
+  </div>
+  <script src="app.js" defer></script>
+
+</body>
+</html>
